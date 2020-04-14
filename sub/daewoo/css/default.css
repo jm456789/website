@@ -1,0 +1,20 @@
+/* 
+
+	모든 페이지에 기본 포함 될 css로 문서의 기본 설정
+	- 태그의 기본 여백 삭제
+	- li앞에 동그라미 삭제
+	- clearfix
+
+*/
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,button{margin:0;padding:0;}
+address,em{font-style:normal;}
+ul,li{list-style:none;}
+button{border:0;background:none;cursor:pointer;}
+
+a img{border:0;}
+a{text-decoration:none;}
+
+/* float 값의 문제를 해결하기 위한 값*/
+.clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.clearfix{display:block;}

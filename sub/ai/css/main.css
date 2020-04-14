@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrap{background:url(../images/main_bg.png), #fafafa; background-repeat:no-repeat, repeat; background-position: right bottom, center center; min-height: 937px; height: 100vh;} 
+
+.main{padding: 85px 20px 20px 20px; box-sizing: border-box;}
+
+h2{/*padding-left: 25px;*/ box-sizing: border-box; font-size: 45px; color: #214898; font-weight: 900; font-family: 'NGBB', 'NG', 'dotum','arial',sans-serif; letter-spacing: -1.5px;}
+h2 span{font-size: 17px; color: #555; margin-left: 10px; font-weight: 300;}
+
+.box{margin-top: 20px;}
+.box:after{display: block; clear: both; content: "";}
+.box > li{float: left; width: 32%; margin-left: 2%; box-sizing: border-box;}
+.box > li:first-child{margin-left: 0;}
+.box > li > div{background-color: rgba(255,255,255,0.9); box-shadow: 3px 3px 5px rgba(0,0,0,0.13); padding: 20px; box-sizing: border-box; height: 335px;}
+.box h3{font-size: 20px; color: #235b92; margin-bottom: 20px; position: relative;}
+.box h3 span{font-size: 14px; color: #555; margin-left: 10px; font-weight: 300;}
+.box h3 a{position: absolute; right: 0; top: 2px; font-size: 0; background:url(../images/m_plus.png) center center no-repeat;width: 18px; height: 18px; }
+
+.list-table{width: 100%; border-collapse: collapse; border-spacing: 0; table-layout:fixed;}
+.list-table *{box-sizing: border-box;}
+.list-table thead th, .list-table tbody td{padding: 7px 10px; box-sizing: border-box; text-align: center; border-bottom: 1px #ccc solid; color: #666; font-weight: normal; font-size: 14px; }
+.list-table thead th a, .list-table tbody td a{color: #666;}
+.list-table thead th{background: #f0f3f9; border-top: 2px #4a739b solid; color: #0a2359;}
+.list-table tbody td{text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.list{}
+.list li{border-bottom: 1px dashed #ccc;padding: 15px 0; box-sizing: border-box;}
+.list li:first-child{padding-top: 0;}
+.list li:last-child{border-bottom: 0;}
+.list li a{}
+.list li a span{display: block; color: #555; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.list li a .date{font-size: 14px; color: #4f7dab; background: url(../images/m_date.png) left center no-repeat; padding-left: 25px; box-sizing: border-box; margin-top: 5px;}

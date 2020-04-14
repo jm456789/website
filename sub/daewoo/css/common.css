@@ -1,0 +1,83 @@
+@import url(default.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+/* 웹 접근성 따기 위해! */
+.skip_cts{position:absolute;left:0;top:-100px;width:100%;background:#1b4a75;color:#fff;text-align:center;padding:10px 0;z-index:1000;}
+.skip_nav{position:absolute;left:0;top:-100px;width:100%;background:#ccc;color:#111;text-align:center;padding:10px 0;z-index:1000;}
+ 
+.skip_cts:focus{top:0;}
+.skip_nav:focus{top:0;}
+
+body,button{font-family: 'Noto Sans KR', sans-serif;color:#fff;font-size:17px;font-weight:300;line-height:1.47;letter-spacing:-0.04em;}
+@media screen and (max-width:640px){
+	body{font-size:12px;color:rgba(0,0,0,0.7);}
+}
+
+.wrap{width:1200px;margin:0 auto;}
+@media screen and (max-width:640px){
+	.wrap{width:auto;margin:0 5%;}
+}
+
+
+.fix_top{position:fixed;left:0;top:0;height:1000px;width:100%;z-index:10;}
+.scroll_cts{position:relative;z-index:11;margin-top:1000px;}
+
+
+header{height:94px;border-bottom:1px solid #1d384a;position:fixed;left:0;top:0;z-index:12;width:100%;}
+
+header h1{position:absolute;left:0;top:0;}
+header h1 a{height:94px;width:230px;display:inline-block;font-size:0;line-height:94px;background:url(../images/common/logo.png) left 50px top 25px no-repeat;}
+
+header nav{text-align:center;}
+header nav>ul{display:inline-block;}
+header nav>ul>li{float:left;position:relative;}
+header nav>ul>li>a{font-size:21px;color:#fff;padding:31px 33px;display:inline-block;}
+header nav>ul>li>ul{display:none;position:absolute;left:0;top:94px;z-index:1020;width:100%;height:470px;border-left:1px solid #ededed;}
+header nav>ul>li>ul:last-child{border-right:1px solid #ededed;}
+header nav>ul>li>ul>li{}
+header nav>ul>li>ul>li:nth-child(1){margin-top:10px;}
+header nav>ul>li>ul>li>a{display:inline-block;height:100%;width:100%;padding:10px 0;position:relative;}
+header nav>ul>li>ul>li>a>em{display:inline-block;color:#3d3d3d;position:relative;z-index:1020;}
+header nav>ul>li>ul>li>a>span{background:#1b4a75;width:0;height:100%;display:inline-block;position:absolute;left:0;top:0;z-index:1010;transition:0.5s;}
+
+header nav>ul>li>a:hover{color:#1b4a75;font-weight:400;}
+header nav>ul>li.on>a{color:#1b4a75;font-weight:400;}
+header nav>ul>li>ul>li>a:hover>em{color:#fff;font-weight:200;}
+header nav>ul>li>ul>li>a:hover>span{width:100%;}
+
+header nav.on>ul>li>ul{display:block;}
+
+header .lang{position:absolute;right:0;top:0;}
+header .lang ul{}
+header .lang ul li{float:left;}
+header .lang ul li a{font-size:17px;color:#fff;padding:35px 12px;display:inline-block;}
+header .lang ul li:last-child a{padding-right:50px;}
+
+header .lang ul li a:hover{text-decoration:underline;}
+
+header .bg{display:none;width:100%;height:470px;background:#f5f5f5;position:absolute;left:0;top:95px;z-index:1000;}
+
+header.menu{background:#fff;border-bottom:1px solid #ededed;}
+header.menu h1 a{background:url(../images/common/logo_c.png) left 50px top 25px no-repeat;}
+header.menu nav>ul>li>a{color:#111;}
+header.menu .lang ul li a{color:#111;}
+
+
+footer{}
+footer{background:#1d2b37;height:201px;}
+footer img{float:left;padding-top:40px;margin-right:75px;}
+footer .colgroup{float:left;}
+footer .colgroup .f_navi li{float:left;background:url(../images/common/f_a_bg.png) left center no-repeat;}
+footer .colgroup .f_navi li:first-child{background:none;}
+footer .colgroup .f_navi li a{color:#919191;font-size:16px;padding:20px;display:inline-block;}
+footer .colgroup .f_navi li:first-child a{padding-left:0;}
+footer .colgroup .f_navi li a strong{color:#fff;font-weight:300;}
+footer .colgroup p{font-weight:200;opacity:0.6;font-size:15px;}
+
+footer .colgroup .f_navi li a:hover{text-decoration:underline;}
+
+
+
+
+

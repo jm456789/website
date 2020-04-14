@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>메인</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dashboard-lauout.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/chart.min.js"></script>    
+    <script src="js/sub.js"></script>    
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><a href=""><img src="images/logo.png" alt="Ai SecuPortal 지능형 보안감사포탈" /></a></h1>
+            <div class="my_info">
+                <span>홍길동님 환영합니다</span>
+                <ul class="layout_b_2">
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">로그아웃</a></li>
+                </ul>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="">나의업무</a>
+                    <ul>
+                        <li><a href="">업무일정</a></li>
+                        <li><a href="">업무처리</a></li>
+                        <li><a href="">업무계획등록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">보안업무</a>
+                    <ul>
+                        <li>
+                            <a href="" class="plus_a">관리적보안관리</a>
+                            <ul>
+                                <li><a href="">보안지침 제개정관리</a></li>
+                                <li><a href="">보안조직관리</a></li>
+                                <li><a href="">담당자정보보안교육관리</a></li>
+                                <li><a href="">기타보안활동관리</a></li>
+                            </ul>                        
+                        </li>
+                        <li><a href="">시스템보안관리</a></li>
+                        <li>
+                            <a href="" class="plus_a">인원자산보안관리</a>
+                            <ul>
+                                <li><a href="">프로젝트등록(SI,SM 구분)</a></li>
+                                <li><a href="">업체 SM업무</a></li>
+                                <li><a href="">업체 SI업무</a></li>
+                            </ul>   
+                        </li>
+                        <li><a href="">위기대응역량</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">평가관리</a>
+                    <ul>
+                        <li><a href="">보안평가 항목관리</a></li>
+                        <li><a href="">자체평가</a></li>
+                        <li><a href="">실평가</a></li>
+                        <li><a href="">보안감사관리</a></li>
+                        <li><a href="">개인정보영향도평가</a></li>
+                        <li><a href="">취약점 평가</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">대쉬보드</a>
+                    <ul>
+                        <li><a href="">업무진척율</a></li>
+                        <li><a href="">개선조치이행율</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">시스템관리</a>
+                    <ul>
+                        <li><a href="">공통코드관리</a></li>
+                        <li><a href="">프로그램관리</a></li>
+                        <li><a href="">메뉴관리</a></li>
+                        <li><a href="">메뉴권한관리</a></li>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">시스템로그인이력</a></li>
+                        <li><a href="">라이센스관리</a></li>
+                    </ul>
+                </li>
+            </ul>            
+        </header>
+        <button class="show_h">닫기/열기</button>
+        <div class="contents">
+            <div class="main">
+                <h2>SecuManager <span>다양한 업무일정 및 시스템관리를 도와드립니다.</span></h2>
+                <div>
+                    <ul class="box">
+                        <li>
+                            <div>
+                                <h3>업무현황<span>현재 운영중인 표준기준</span><a href="">더보기</a></h3>
+                                <canvas id="myChart" height="245"></canvas>
+                                <script>var ctx = document.getElementById("myChart");
+                                var myChart = new Chart(ctx, {
+                                    type: 'polarArea',
+                                    data: {
+                                        datasets: [{
+                                            data: [10, 20, 30],
+                                            backgroundColor:[ "#f5b300", "#76bd07", "#0a6acd"],                                            
+                                        }],
+                                        labels:[
+                                          "접수", "진행중", "완료"  
+                                        ],
+                                    }, /*                                   
+                                    options: {
+                                        scales: {
+                                            yAxes: [{
+                                                ticks: {
+                                                    beginAtZero:true
+                                                }
+                                            }]
+                                        }
+                                    }*/
+                                });
+                                </script>
+                            </div>    
+                        </li>
+                        <li>
+                            <div>
+                                <h3>오늘의 업무처리<a href="">더보기</a></h3>
+                                <table class="list-table">
+                                    <caption class="blind">오늘의 업무처리 테이블입니다.</caption>
+                                    <colgroup>
+                                        <col style="width:40%;">
+                                        <col style="width:35%;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row">업무명</th>
+                                            <th scope="row">업무유형</th>
+                                            <th scope="row">업무주기</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>    
+                        </li>
+                        <li>
+                            <div>
+                                <h3>최근 등록된 업무처리<a href="">더보기</a></h3>
+                                <table class="list-table">
+                                    <caption class="blind">최근 등록된 업무처리 테이블입니다.</caption>
+                                    <colgroup>
+                                        <col style="width:40%;">
+                                        <col style="width:35%;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row">업무명</th>
+                                            <th scope="row">업무유형</th>
+                                            <th scope="row">업무주기</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">공소부제기이현상에대한</a></td>
+                                            <td>기업관리안전사무조사</td>
+                                            <td>3개월</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>    
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="box">
+                        <li>
+                            <div>
+                                <h3>공지사항<a href="">더보기</a></h3>
+                                <ul class="list">
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>                                        
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>                                        
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>    
+                                    </li>   
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>    
+                                    </li> 
+                                </ul>
+                            </div>    
+                        </li>
+                        <li>
+                            <div>
+                                <h3>월별 업무현황<span>최근 4개월</span><a href="">더보기</a></h3>
+                                <canvas id="myBarChart " height="245"></canvas>
+                                <script>var ctx = document.getElementById("myBarChart ");
+                                var myBarChart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {                                        
+                                        datasets: [{
+                                            label:"월별 업무현황",
+                                            data: [10, 20, 30],
+                                            backgroundColor:[ "#f5b300", "#76bd07", "#0a6acd"],
+                                        }],
+                                        labels:[
+                                          "접수", "진행중", "완료"  
+                                        ],
+                                    },                                
+                                    options: {
+                                        scales: {
+                                            xAxes: [{
+                                                stacked: true
+                                            }],
+                                            yAxes: [{
+                                                stacked: true
+                                            }]
+                                        }
+                                    }
+                                });
+                                </script>
+                            </div>    
+                        </li>
+                        <li>
+                            <div>
+                                <h3>게시판<a href="">더보기</a></h3>
+                                <ul class="list">
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>  
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>  
+                                    </li>         
+                                    <li>
+                                        <a href="">
+                                            <span>고덕강일 공공주택지구 4단지 특별분양(신혼부부를 위한)</span>
+                                            <span class="date">2019.09.03</span>
+                                        </a>    
+                                    </li>
+                                </ul>
+                            </div>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

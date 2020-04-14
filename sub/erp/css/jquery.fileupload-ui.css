@@ -1,0 +1,227 @@
+.position{position:relative;}
+
+.file_upload {
+  position: absolute;
+  overflow: hidden;
+  direction: ltr;
+  cursor: pointer;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 88px;
+  height: 35px;
+  line-height: 20px;
+  /*background: white;*/
+    left:0;
+    top:0;
+}
+
+.file_upload input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: none;
+  font-size: 600px;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file_upload iframe, .file_upload button {
+  display: none;
+}
+
+.file_upload_progress .ui-progressbar-value {
+  background: url('../../images/enia/common/pbar-ani.gif');
+}
+
+.file_upload_progress div {
+  width: 150px;
+  height: 15px;
+}
+
+.file_upload_cancel div {
+  cursor: pointer;
+}
+
+.download_files {
+	clear:both;
+	float:none;
+	*zoom:1;
+	margin:0px auto;
+	margin-bottom:15px;
+	border:1px solid #ddd;
+	/* border-right:0px; */
+	/*border-top:2px solid #0b7cc1;*/
+	/*border-bottom:2px solid #0b7cc1;*/
+	font-size:11px;
+}
+.download_files caption {
+	overflow:hidden;      
+	clear:both;
+	float:none;
+	width:100%;
+	margin:0px auto;
+	margin-top:5px;    
+	margin-left:5px;
+	margin-bottom:3px;
+	color:#000;
+	text-align:left;
+	font-size:13px;  
+	font-weight:600;
+	font-family:"dotum";
+	letter-spacing:-.1em;
+}
+.download_files th {
+	font-weight:700;
+	/*padding:6px 3px 3px;*/
+	line-height:22px;
+	text-align:left;
+	color:#666;
+	letter-spacing:-.1em;
+	/*border-right:1px solid #ddd;*/
+	/*border-bottom:1px solid #ddd;*/
+	background-color:#f7f7f7;
+	
+}
+         
+.download_files thead { overflow:hidden; }
+
+.download_files thead th {
+	overflow:hidden;
+	text-align:center;
+	/*line-height:26px;*/
+	/*border-bottom:1px solid #9fa4af;*/
+}
+.download_files tbody th {
+	text-align:center;
+	background-image:none;
+	background-color:#f7f7f7;
+}
+.download_files thead.lh16 th {
+	line-height:18px;
+	padding:12px 3px 8px;
+}
+.download_files tbody th {
+	line-height:19px;
+}
+.download_files.view tbody th,
+.download_files.view tbody td {
+	padding:10px;
+}
+.download_files tbody th .type_radio {
+	margin-right:0px;
+}
+.download_files td {
+	/*padding-top:9px;*/
+	/*padding-bottom:5px;*/
+	padding-left:5px;
+	padding-right:5px;
+	font-weight:400;
+	line-height:18px;
+	letter-spacing:-.05em;
+	text-align:center;
+	vertical-align:middle;
+	background-color:#fff;
+	border:0;    
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.download_files tr.active td {
+	background-color:#e4eaff;
+}
+.download_files .center {
+	text-align:center;
+}
+.download_files tbody td {
+	height: 20px;          
+}
+.download_files th div.left, .download_files td div.left {
+	clear:both;
+	float:none;
+	text-align:left;
+}
+.download_files div.right {
+	clear:both;
+	float:none;
+	text-align:right;
+}
+.download_files td div.left .fl {
+	float:left;
+}
+.download_files td div.left .fr {
+	float:right;
+}
+.download_files td div.left .lh23 {
+	line-height:23px;
+}
+.download_files td div.left.mt {
+	margin-top:10px;
+}
+.download_files td div.left p.memo {
+	line-height:20px;
+}
+.download_files td div.left p.memo img {
+	max-width:700px;
+	margin:5px;
+}
+.download_files.view tbody div.left.num {
+	margin-bottom:4px;
+}
+.download_files td div.left ul {
+	clear:both;
+	float:none;
+	display:block;
+}
+.download_files td div.left li {
+	float:left;
+	padding-right:3px;
+}
+	form .download_files td div.left div {
+		margin:4px 0px 2px 0px;
+	}
+.download_files td div.left a {
+	display:block;
+}
+.download_files .eng {
+	font-size:11px;
+}
+.files_table_scroll{
+		height:124px !important;
+		width:100%;  
+		overflow-x:hidden;
+		overflow-y:auto;		        
+			
+		*overflow:scroll;   
+		/*margin-bottom:20px;*/
+		border:0 !important ;
+ 		margin:0 !important;  
+		padding-top:-1px !important;        
+}
+
+.files_table_scroll.height_62 {
+	height:62px !important;
+}
+     
+.title{
+	clear:both;
+	float:none;
+	width:100%;
+	margin:0px auto;      
+	margin-top:5px;
+	margin-left:5px; 
+	margin-bottom:3px;
+	color:#000;
+	text-align:left;
+	font-size:13px;
+	font-weight:600;
+	font-family:"dotum";
+	letter-spacing:-.1em;
+}
+  

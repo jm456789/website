@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.scrollY{
+    overflow-y: auto;
+    max-height: 241px;
+}
+
+.scrollY10{
+    overflow-y: auto;
+    max-height: 482px;
+}
+
+.poin{
+    cursor: pointer;
+}
+
+.es{position: relative;
+    top: -3px;
+    display: inline-block;
+}
+
+input[disabled="disabled"]{
+    background: #f7f7f7;
+}
+
+.icon{
+    margin: 0 10px 0 25px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* 페이징 공통 */
+.paging_wrap {margin-top:30px; text-align:center; }
+.paging_wrap .paging_box{display:inline-block; box-sizing:border-box;}
+.paging_wrap .paging_box > a, .paging_wrap .paging_box > span{display:inline-block; width:30px; height:30px; margin:0 2px; line-height:30px; font-size:16px; text-align:center; color:#333;}
+.paging_wrap .paging_box > span, .paging_wrap .paging_box > a:hover, .paging_wrap .paging_box > a:focus, .paging_wrap .paging_box > a:active {font-weight:600; color:#2170c1; text-decoration:none;}
+.paging_wrap .paging_box > a.page_prev{background-image:url(../images/icon_page_prev.png);}
+.paging_wrap .paging_box > a.page_next{background-image:url(../images/icon_page_next.png);}
+.paging_wrap .paging_box > a.page_prev, .paging_wrap .paging_box > a.page_next {border-radius:36px; background-color:#d7e8f9; background-repeat:no-repeat; background-position:center 0; text-indent:-9999px; transition:all 0.2s;}
+.paging_wrap .paging_box > a.page_prev:hover, .paging_wrap .paging_box > a.page_prev:focus, .paging_wrap .paging_box > a.page_prev:active, .paging_wrap .paging_box > a.page_next:hover,
+.paging_wrap .paging_box > a.page_next:focus, .paging_wrap .paging_box > a.page_next:active {background-color:#2170c1; background-position:center -36px;}
+
+@media screen and (max-width:1024px){
+    .icon{margin-left:0px;}
+}
+
+
+
+
+
+
+

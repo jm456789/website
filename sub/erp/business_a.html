@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<title>에니아소프트 ERP</title>
+	<link rel="stylesheet" type="text/css" href="css/import.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>    
+    
+</head>
+<body>
+	<div id="wrap">
+        
+        <!-- gnb -->
+        <script language="JavaScript" src="js/gnb.js"></script> 
+        <!-- gnb -->
+        <!-- content -->
+        <div class="contents">
+            <!-- header -->
+            <script language="JavaScript" src="js/header.js"></script>
+            <!-- header -->
+            
+            <!-- cont_wrap -->
+            <div class="cont_wrap">
+                <h2 class="tit1">휴가/출장승인</h2>
+                <h3 class="tit2">기간조회</h3>
+                <!-- search_box -->
+                <div class="mb30 search_box">
+                    <span class="input_tit">기간</span>
+                    <span class="date">
+                        <input type="text" class="icon_date datepicker" />
+                        ~
+                        <input type="text" class="icon_date datepicker" />
+                    </span>
+                    <span class="input_tit">작성자</span>
+                    <div class="input_button">
+                        <input type="text" disabled="disabled" />
+                        <button type="button" class="icon_del">삭제</button>
+                        <button type="button" class="icon_search btn_layer" data-pop_name="layer_coll">검색</button>
+                    </div>
+                    <button type="button" class="btn_sz_sm btn_bg1"><span class="icon_search">조회</span></button>
+                </div>
+                <!-- search_box -->
+                <div class="tit_btn">
+                    <h3 class="tit2">승인 대기 목록</h3>
+                    <div class="btn_group">
+                        <a href="menu_list2.html" class="btn_sz_sm btn_ln1">승인</a>
+                        <a href="" class="btn_sz_sm btn_bg1">반려</a>
+                    </div>
+                </div>
+                <!-- list_table -->
+                <div class="mb30 list_table">
+                    <table>
+                        <colgroup>
+                            <col style="width:10%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순번</th>
+                                <th>
+                                    <label for="all_check1">
+                                        <input type="checkbox" id="all_check1" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </th>
+                                <th>휴가/출장</th>
+                                <th>시작일</th>
+                                <th>종료일</th>
+                                <th>일수</th>
+                                <th>휴가사유/출장목적</th>
+                                <th>업무인수자/출장지</th>
+                                <th>작성자</th>
+                                <th>결재상태</th>
+                                <th>비고</th>
+                            </tr>                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <label for="che2">
+                                        <input type="checkbox" id="che2" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>휴가</td>
+                                <td>2020-01-01</td>
+                                <td>2020-02-01</td>
+                                <td>31일</td>
+                                <td><a href="business_a_view.html">병원투어</a></td>
+                                <td>둘리 부장</td>
+                                <td>홍길동</td>
+                                <td>대기</td>
+                                <td>반려사유 등 작성</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <label for="che3">
+                                        <input type="checkbox" id="che3" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>휴가</td>
+                                <td>2020-01-01</td>
+                                <td>2020-02-01</td>
+                                <td>31일</td>
+                                <td><a href="business_a_view.html">병원투어</a></td>
+                                <td>둘리 부장</td>
+                                <td>홍길동</td>
+                                <td>대기</td>
+                                <td>반려사유 등 작성</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <label for="che4">
+                                        <input type="checkbox" id="che4" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>휴가</td>
+                                <td>2020-01-01</td>
+                                <td>2020-02-01</td>
+                                <td>31일</td>
+                                <td><a href="business_a_view.html">병원투어</a></td>
+                                <td>둘리 부장</td>
+                                <td>홍길동</td>
+                                <td>대기</td>
+                                <td>반려사유 등 작성</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <label for="che5">
+                                        <input type="checkbox" id="che5" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>휴가</td>
+                                <td>2020-01-01</td>
+                                <td>2020-02-01</td>
+                                <td>31일</td>
+                                <td><a href="business_a_view.html">병원투어</a></td>
+                                <td>둘리 부장</td>
+                                <td>홍길동</td>
+                                <td>대기</td>
+                                <td>반려사유 등 작성</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <label for="che6">
+                                        <input type="checkbox" id="che6" name="checkbox1" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>휴가</td>
+                                <td>2020-01-01</td>
+                                <td>2020-02-01</td>
+                                <td>31일</td>
+                                <td><a href="business_a_view.html">병원투어</a></td>
+                                <td>둘리 부장</td>
+                                <td>홍길동</td>
+                                <td>대기</td>
+                                <td>반려사유 등 작성</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- list_table -->
+            </div>
+            <!-- cont_wrap -->
+
+            <!-- footer -->
+            <script language="JavaScript" src="js/footer.js"></script>
+            <!-- footer -->
+            
+        </div>
+        <!-- content -->
+        <!-- layer_popup -->
+        <div class="layer_popup layer_coll">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <!-- title btn -->
+                    <div class="tit_btn">
+                        <h3 class="tit2">사번 조회</h3>
+                        <div class="btn_group">
+                            <a href="" class="btn_sz_sm btn_bg1">조회</a>
+                        </div>
+                    </div>
+                    <!-- title btn -->
+                    <!-- search_box -->
+                    <div class="search_box mb30">
+                        <span class="input_tit">이름</span>
+                        <input type="text">
+                        <span class="input_tit">직급</span>
+                        <select>
+                            <option value="">셀렉트1 </option>
+                            <option value="">셀렉트2</option>
+                            <option value="">셀렉트3</option>
+                        </select>
+                        <span class="input_tit">계약구분</span>
+                        <select>
+                            <option value="">셀렉트1 </option>
+                            <option value="">셀렉트2</option>
+                            <option value="">셀렉트3</option>
+                        </select>
+                    </div>
+                    <!-- search_box -->
+                    <!-- list_table -->
+                    <div class="list_table scrollY10">
+                        <table>
+                            <colgroup>
+                                <col style="width:10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>순번</th>
+                                    <th>사번</th>
+                                    <th>성명</th>
+                                    <th>직급</th>
+                                    <th>부서</th>
+                                    <th>계약구분</th>
+                                </tr>                        
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>10000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>20000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>30000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>40000</td>
+                                    <td>인사관리</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>30000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>40000</td>
+                                    <td>인사관리</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>50000</td>
+                                    <td>홍길동</td>
+                                    <td>부장</td>
+                                    <td>SI3팀</td>
+                                    <td>정규직</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- list_table -->
+                    <div class="btn_popup">
+                        <a href="" class="btn_sz_md btn_bg1 btn_pop_close">닫기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- layer_popup -->
+    </div>
+</body>
+</html>
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->

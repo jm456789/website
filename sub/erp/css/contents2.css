@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* 모바일 qr */
+.mobile_qr{background:url(../images/bg_mobile_qr.png) center top 110px no-repeat; text-align:center;}
+.mobile_qr b{display:block; margin-bottom:15px; padding-top:310px; font-size:17px; color:#333; line-height:1.6;}
+.mobile_qr > span{font-size:12px; line-height:1.6;}
+.mobile_qr [class^="btn"]{display:block; width:294px; height:45px; margin:0 auto; margin-top:105px; background-color:#2b90d9; border-radius:5px; color:#fff; font-size:15px; line-height:45px;}
+
+/* 확인 팝업 */
+.pop_confirm{min-width:220px; margin-top:15px; padding-top:55px; background:url(../images/icon_confirm.png) center top no-repeat; text-align:center; font-size:16px; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+

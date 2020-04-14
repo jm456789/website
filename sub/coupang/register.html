@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>접수의뢰</title>
+	<link rel="stylesheet" type="text/css" href="css/import.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>    
+    
+</head>
+<body>
+	<div id="wrap">
+        
+        <!-- gnb -->
+        <div class="gnb">
+            <h1><a href="index.html"><img src="images/logo.png" alt="쿠팡전용성적서조회" /></a></h1>
+            <ul>
+               <li><a href="register.html" class="m_register">접수의뢰</a></li>
+               <li><a href="approval.html" class="m_approval">검사항목승인</a></li>
+               <li><a href="civil.html" class="m_complain">민원접수현황</a></li>
+               <li><a href="grade.html" class="m_report">성적서 발행현황</a></li>
+               <li><a href="statement.html" class="m_check">검사내역조회</a></li>
+               <li><a href="progress.html" class="m_progress">진행접수현황</a></li>
+               <li><a href="user.html" class="m_user">사용자관리</a></li>
+            </ul>
+        </div>
+        <!-- gnb -->
+        
+        <!-- contents -->
+        <div class="contents">
+            
+            <!-- header -->
+            <div class="header">               
+               <div class="header_right_group">
+                  <p>홍길동님 반갑습니다.</p>
+                  <ul class="icon_group">
+                     <li><a href="login.html" class="h_top_logout">로그아웃</a></li>
+                   </ul>
+               </div>
+            </div>
+            <!-- header -->
+            
+            <!-- cont_wrap -->
+            <div class="cont_wrap">
+                
+                <!-- 접수의뢰 입력 -->
+                <div class="tit_btn">
+                    <h3 class="tit2">접수의뢰 입력</h3>
+                    <div class="btn_group">
+                        <a href="" class="btn_sz_sm btn_bg1">등록</a>
+                    </div>
+                </div>
+                <!-- 접수의뢰 입력 -->
+                
+                <!-- 접수의뢰 입력 input_table -->
+                <div class="input_table mb30">
+                    <table>
+                        <colgroup>
+                            <col style="width:12%;" />
+                            <col style="width:38%;" />
+                            <col style="width:12%;" />
+                            <col style="width:auto;" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>접수구분</th>
+                                <td>
+                                    <select>
+                                        <option value="">일반검사</option>
+                                        <option value="">일반검사</option>
+                                        <option value="">일반검사</option>
+                                    </select>
+                                </td>
+                                <th>의뢰구분</th>
+                                <td>
+                                    <select>
+                                        <option value="">한약재(수입)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>검체명</th>
+                                <td>
+                                    <select>
+                                        <option value="">산약</option>
+                                    </select>
+                                </td>
+                                <th>업무분야</th>
+                                <td>
+                                    <select>
+                                        <option value="">한약재 </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>접수일자</th>
+                                <td>
+                                    <input type="text" class="icon_date datepicker" />
+                                </td>
+                                <th>발행일자</th>
+                                <td>
+                                    <input type="text" class="icon_date datepicker" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>업체명</th>
+                                <td><input type="text" class="w100" /></td>
+                                <th>검체명</th>
+                                <td><input type="text" class="w100" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 접수의뢰 입력 input_table -->
+                
+                <!-- 접수의뢰 검색 -->
+                <div class="tit_btn">
+                    <h3 class="tit2">접수의뢰 검색</h3>
+                    <div class="btn_group">
+                        <a href="" class="btn_sz_sm btn_bg1"><span class="icon_search">조회</span></a>
+                        <a href="" class="btn_sz_sm btn_ln1">엑셀다운로드</a>                        
+                    </div>
+                </div>
+                <!-- 접수의뢰 검색 -->
+                
+                <!-- 접수의뢰 검색 search_box -->
+                <div class="search_box mb30">
+                    <div>
+                        <span class="input_tit">접수구분</span>
+                        <select>
+                            <option value="">전체</option>
+                        </select>                        
+                    </div>
+                    <div>
+                        <span class="input_tit">의뢰구분</span>
+                        <select>
+                            <option value="">전체</option>
+                        </select>                        
+                    </div>
+                    <div>
+                        <span class="input_tit">검체명</span>
+                        <select>
+                            <option value="">전체</option>
+                        </select>                        
+                    </div>
+                    <div>
+                        <span class="input_tit">업무분야</span>
+                        <select>
+                            <option value="">전체</option>
+                        </select>                        
+                    </div>
+                    <div>
+                        <span class="input_tit">접수일자</span>
+                        <input type="text" class="icon_date datepicker">
+                    </div>
+                    <div>
+                        <span class="input_tit">발행일자</span>
+                        <input type="text" class="icon_date datepicker">                  
+                    </div>
+                    <div>
+                        <span class="input_tit">업체명</span>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <span class="input_tit">검체명</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <!-- 접수의뢰 검색 search_box -->
+                
+                <!-- 접수의뢰 검색 list_table -->
+                <span class="caption">* 135건이 조회되었습니다.</span>
+                <div class="list_table scrollY">
+                    <table>
+                        <colgroup>
+                            <col style="width:150px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>접수구분</th>
+                                <th>의뢰구분</th>
+                                <th>검체명</th>
+                                <th>업무분야</th>
+                                <th>접수일자</th>
+                                <th>발행일자</th>
+                                <th>업체명</th>
+                                <th>검체명</th>
+                            </tr>                        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                            <tr>
+                                <td>일반 검사</td>
+                                <td>한약재(수입)	</td>
+                                <td>산약</td>
+                                <td>한약재</td>
+                                <td>2020-04-09</td>
+                                <td>2020-04-09</td>
+                                <td>(주)에니아소프트</td>
+                                <td>(주)에니아소프트</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 접수의뢰 검색 list_table -->
+                
+            </div>
+            <!-- cont_wrap -->
+            
+            <!-- footer -->
+            <div class="footer">               
+               <p>copyright(c) 2020 KFIA&amp;coupang rights reserved.</p>
+            </div>
+            <!-- footer -->
+            
+        </div>
+        <!-- contents -->
+        
+	</div>
+</body>
+</html>

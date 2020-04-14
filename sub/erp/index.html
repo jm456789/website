@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<title>에니아소프트 ERP</title>
+	<link rel="stylesheet" type="text/css" href="css/import.css" />    
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mtz.monthpicker.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+	<div id="wrap">
+        
+        <!-- gnb -->
+        <script language="JavaScript" src="js/gnb.js"></script> 
+        <!-- gnb -->
+        
+        <!-- contents -->
+        <div class="contents">
+            <!-- header -->
+            <script language="JavaScript" src="js/header.js"></script>
+            <!-- header -->
+            
+            <!-- cont_wrap -->
+            <div class="cont_wrap">
+                
+                <!-- col_group1 -->
+                <div class="col_group1">
+                    <ul class="main_user_tab tab_view">
+                        <li><button type="button" class="on">출근현황</button></li>
+                        <li><button type="button">개인현황</button></li>
+                        <li><button type="button">출장 및 휴가자</button></li>
+                    </ul>
+                    <div class="main_user tab_cont tab_cont1">
+                        <p><b class="fc1">사용자123</b>님</p>
+                        <ul>
+                            <li>
+                                <p>출근시간</p>
+                                <b class="fc1">08:50</b>
+                            </li>
+                            <li>
+                                <p>퇴근시간</p>
+                                <b class="fc1">18:00</b>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 사용자 화면 
+                    <div class="main_indivisual tab_cont tab_cont2">
+                        <p><b>개인현황</b></p>
+                        <div>
+                            <span>연차현황</span>
+                            <span><b class="fc1">23.5</b> &nbsp; 일 &nbsp; / &nbsp; <b>16</b> &nbsp; 일</span>
+                        </div>
+                    </div>
+                    사용자 화면 -->
+                    
+                    <!-- 관리자 화면  -->
+                    <div class="main_admin tab_cont tab_cont2">
+                        <p><b>개인현황</b></p>
+                        <div class="search_area">
+                            <input type="text" placeholder="직원명을 입력해주세요." />
+                            <a href="" class="btn_sz_icon btn_bg1 btn_layer" data-pop_name="layer_confirm"><span class="icon_search">검색</span></a>
+                        </div>
+                        <div class="scroll mCustomScrollbar" data-mcs-theme="inset-dark">
+                            <ul>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13.5</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                                <li><b>왕감자</b> <b class="fc1">13</b> 일 &nbsp; / &nbsp; <b>16</b> 일</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!--관리자 화면 -->
+                    
+                    <div class="main_business tab_cont tab_cont3">
+                        <p><b>출장 및 휴가현황</b></p>
+                        <div class="date_area">
+                            <span class="date">
+                                <input type="text" class="icon_date monthpicker" />
+                                <span>~</span>
+                                <input type="text" class="icon_date datepicker" />
+                            </span>
+                            <a href="" class="btn_sz_icon btn_bg1"><span class="icon_search">검색</span></a>
+                        </div>
+                        <div class="scroll mCustomScrollbar" data-mcs-theme="inset-dark">
+                            <ul>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state1">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                                <li><span class="state2">출장</span> <b class="fc1">왕감자</b>님 <span class="b_date">01-01 ~ 12-31</span></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    
+                </div>
+                <!-- col_group1 -->
+                
+                <!-- col_group2 -->
+                <div class="col_group2">
+                    <div class="main_notice">
+                        <p><b>공지사항</b></p>
+                        <ul>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                        </ul>
+                        <a href="" class="list_more">더보기</a>
+                    </div>
+                    <div class="main_data">
+                        <p><b>자료실</b></p>
+                        <ul>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                        </ul>
+                        <a href="" class="list_more">더보기</a>
+                    </div>
+                    
+                    <!-- 모바일에서만 나타나는 공지사항+자료실 -->
+                    <div class="mobile_notice_data">
+                        <p><b>공지사항</b></p>
+                        <ul>
+                            <li>
+                                <a href="">모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~ 모바일에서만 나타나는 공지사항과 자료실 입니다~~~~</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                            <li>
+                                <a href="">국내신청-여비외 예산과목 테스트-회의비</a>
+                                <span>2019-12-12</span>
+                            </li>
+                        </ul>
+                        <a href="" class="list_more">더보기</a>
+                    </div>
+                    <!-- 모바일에서만 나타나는 공지사항+자료실 -->
+                    
+                </div>
+                <!-- col_group2 -->
+                
+                <!-- col_group3 -->
+                <div class="col_group3">
+                    <div class="m_icon_list">
+                        <ul>
+                            <li class="main_b_report">
+                                <a href="">
+                                    <p>주간보고서 승인 요청 목록</p>
+                                    <span>총 <b class="fc1">233</b>건</span>
+                                </a>
+                            </li>
+                            <li class="main_b_business">
+                                <a href="">
+                                    <p>출장 승인 요청 목록</p>
+                                    <span>총 <b class="fc1">233</b>건</span>
+                                </a>
+                            </li>
+                            <li class="main_b_meony">
+                                <a href="">
+                                    <p>출장비 신청 승인 대기 목록</p>
+                                    <span>총 <b class="fc1">233</b>건</span>
+                                </a>
+                            </li>
+                            <li class="main_b_voucher">
+                                <a href="">
+                                    <p>지출결의서 승인 대기 목록</p>
+                                    <span>총 <b class="fc1">233</b>건</span>
+                                </a>
+                            </li>
+                            <li class="main_b_vehicle">
+                                <a href="">
+                                    <p>차량유지비 승인 대기 목록</p>
+                                    <span>총 <b class="fc1">233</b>건</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m_icon_link m_icon_link_user"><!-- 관리자일때 m_icon_link_admin 추가 -->
+                        <ul>
+                            <li><a href="" class="icon_main_s_vacation_enroll">개인별 연차관리</a></li>
+                            <li><a href="" class="icon_main_s_business_enroll">출장/휴가 등록</a></li>
+                            <li><a href="" class="icon_main_s_vehicle_enroll">차량유지비 등록</a></li>
+                            <li><a href="" class="icon_main_s_business_meony_enroll">출장비신청 등록</a></li>
+                            <li><a href="" class="icon_main_s_voucher_enroll">지출결의서 등록</a></li>
+                            <li><a href="" class="icon_main_s_report_enroll">주간보고서 등록</a></li>
+                            <li><a href="" class="icon_main_s_salary_receipt">급여 명세서</a></li>
+                            
+                            <li><a href="" class="icon_main_s_qr">출퇴근 QR생성</a></li>
+                            <li><a href="" class="icon_main_s_business">출장/휴가 승인</a></li>
+                            <li><a href="" class="icon_main_s_vehicle">차량유지비 승인</a></li>
+                            <li><a href="" class="icon_main_s_business_meony">출장비신청 승인</a></li>
+                            <li><a href="" class="icon_main_s_voucher_s">지출결의서 승인</a></li>
+                            <li><a href="" class="icon_main_s_working">주간보고서 승인</a></li>
+                            
+                            <li><a href="" class="icon_main_s_qr">출퇴근 QR인증</a></li>
+                            <li><a href="" class="icon_main_s_go_work">출퇴근현황</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- col_group3 -->
+                
+            </div>
+            <!-- cont_wrap -->
+            
+            <!-- footer -->
+                <script language="JavaScript" src="js/footer.js"></script>
+            <!-- footer -->
+            
+        </div>
+        <!-- contents -->
+        
+        <!-- layer_popup -->
+        <div class="layer_popup layer_password">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                   <!-- title btn -->
+                    <div class="tit_btn">
+                        <h3 class="tit2">비밀번호 변경</h3>
+                    </div>
+                    <!-- title btn -->
+
+                    <!-- input_table -->
+                    <div class="input_table">
+                        <table>
+                            <colgroup>
+                                <col style="width:auto;" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>사번</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>기존비밀번호</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>변경비밀번호</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                                <tr>
+                                    <th>변경비밀번호확인</th>
+                                    <td><input type="text" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- input_table -->
+
+                    <div class="btn_popup">
+                        <a href="" class="btn_sz_md btn_ln1 btn_pop_close">닫기</a>
+                        <a href="" class="btn_sz_md btn_bg1">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- layer_popup -->
+        
+        <!-- layer_popup -->
+        <div class="layer_popup layer_confirm">
+            <div class="layer_wrap">
+                <div class="layer_inner">
+                    <p class="pop_confirm">확인되었습니다.</p>
+                    <div class="btn_popup">
+                        <a href="" class="btn_sz_md btn_bg1 btn_pop_close">닫기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- layer_popup -->
+        
+	</div>
+</body>
+</html>
+
+<!-- 레이어팝업 -->
+<div class="layer_overlay"></div>
+<!-- //레이어팝업 -->
