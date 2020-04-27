@@ -51,9 +51,9 @@
 #s_main h1 a{display:inline-block;}
 #s_main .slogan{position:absolute; left:9%; top:180px; z-index:1; }
 #s_main .slogan span{position:relative; display:inline-block; padding:0 10px; color:#606060; font-size:100px; line-height:1.8; font-weight:bold; box-sizing:border-box;}
-#s_main .slogan span:before{display:block; content:""; position:absolute; left:0; bottom:35px; width:0; height:33px; background-color:#C6C9F1; border-radius:500px; z-index:-1; transition:0.8s;}
-#s_main .slogan span:nth-of-type(2):before{transition-delay:0.7s;}
-#s_main .slogan span:nth-of-type(3):before{transition-delay:1.4s;}
+#s_main .slogan span:before{display:block; content:""; position:absolute; left:0; bottom:35px; width:0; height:33px; background-color:#C6C9F1; border-radius:500px; z-index:-1; transition:1s;}
+#s_main .slogan span:nth-of-type(2):before{transition-delay:1s;}
+#s_main .slogan span:nth-of-type(3):before{transition-delay:2s;}
 #s_main .slide_area{position:relative; left:50%; top:80px;  width:576px; height:760px; margin-left:145px; box-shadow:3px 8px 20px rgba(0,0,0,0.16); outline: none}
 #s_main .slide_area .pagingInfo{position:absolute; right:30px; bottom:20px; font-size:25px; color:#fff; text-shadow:0 3px 6px rgba(0,0,0,0.16); z-index:1;}
 #s_main .slide_area .pagingInfo span{font-size:60px;}
@@ -70,8 +70,8 @@
 #s_about > ul > li:last-child{padding-left:80px;}
 #s_about ul ul li{padding:33px 0; box-sizing:border-box;}
 #s_about ul li:last-child ul li{padding:20px 0;}
-#s_about ul ul li p{display:inline-block; position:relative; padding-left:60px; padding-right:30px; letter-spacing:-0.5px; transition:0.5s;}
-#s_about ul ul li p:before{display:block; content:""; position:absolute; left:0; top:50%; width:43px; height:43px; margin-top:-22px; border-radius:500px; box-shadow:0 3px 6px rgba(0,0,0,0.16); background-position: left 11px center; background-repeat:no-repeat; background-color:#8B83D4; z-index:-1; transition:0.5s;}
+#s_about ul ul li p{display:inline-block; position:relative; padding-left:60px; padding-right:30px; letter-spacing:-0.5px; transition:0.5s; transition-delay:0.5s; z-index:10;}
+#s_about ul ul li p:before{display:block; content:""; position:absolute; left:0; top:50%; width:43px; height:43px; margin-top:-22px; border-radius:500px; box-shadow:0 3px 6px rgba(0,0,0,0.16); background-position: left 11px center; background-repeat:no-repeat; background-color:#8B83D4; z-index:-1; transition:0.5s; transition-delay:0.5s;}
 #s_about > ul > li:nth-child(2) ul li p:before{background-color:#babde2;}
 #s_about ul ul li p span{display:block; font-size:15px;}
 
@@ -110,13 +110,15 @@
 #s_project .project_list li a:before{opacity:0; content:""; position:absolute; left:0; top:0; right:0; height:361px; background-color:rgba(0,0,0,0.7); transition:0.5s;}
 #s_project .project_list li a > [class^="p_"]{overflow:hidden; height:18.5vw; max-height:360px;}
 #s_project .project_list li a > [class^="p_"] img{width:100%;}
-#s_project .project_list li a > [class^="p_"]:after{opacity:0; content:""; position:absolute; left:0; top:0; width:100%; height:361px; background-position:center top 80px; background-repeat:no-repeat; transition:0.5s;}
+#s_project .project_list li a > [class^="p_"]:after{opacity:0; content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-position:center top 80px; background-repeat:no-repeat; transition:0.5s;}
 #s_project .project_list li a .txt{padding:20px 15px; text-align:left; box-sizing:border-box;}
 #s_project .project_list li a .txt .fc1{margin-bottom:5px; font-size:13px;}
 #s_project .project_list li a .txt .fc2{margin-bottom:7px; font-size:18px; letter-spacing:-0.5px;}
 #s_project .project_list li a .txt span{display:inline-block;}
 #s_project .project_list li a .txt .date{margin-top:10px; font-size:15px; color:#7E7E7E;}
 
+#s_project .project_list li a > .p_integrated_system:after{background-image:url(../images/img_integrated_system.png);}
+#s_project .project_list li a > .p_nanum:after{background-image:url(../images/img_nanum.png);}
 #s_project .project_list li a > .p_coupang:after{background-image:url(../images/img_coupang.png);}
 #s_project .project_list li a > .p_erp:after{background-image:url(../images/img_erp.png);}
 #s_project .project_list li a > .p_queensball:after{background-image:url(../images/img_queensball.png);}

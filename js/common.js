@@ -5,49 +5,13 @@ $(document).ready(function () {
     
     /* contact me */
     $(".btn_contact").click(function(){
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        
         $(".icon_phone").addClass("on");
         $(".icon_mail").addClass("on");
+        
+        return false;
     });
-    
-    /* aside */
-    (function (global, $) {
-
-        var $menu     = $('#aside ul li'),
-            $contents = $('.cont'),
-            $doc      = $('html, body');
-        $(function () {
-
-            $menu.on('click','a', function(e){
-                var $target = $(this).parent(),
-                    idx     = $target.index(),
-                    section = $contents.eq(idx),
-                    offsetTop = section.offset().top;
-                $doc.stop()
-                        .animate({
-                            scrollTop :offsetTop
-                        }, 500);
-                return false;
-            });
-        });
-
-        $(window).scroll(function(){
-
-            var scltop = $(window).scrollTop();
-
-            $.each($contents, function(idx, item){
-                var $target   = $contents.eq(idx),
-                    i         = $target.index(),
-                    targetTop = $target.offset().top;
-
-                if (targetTop <= scltop) {
-                    $menu.removeClass('on');
-                    $menu.eq(idx).addClass('on');
-                }
-            })
-
-        });
-
-    }(window, window.jQuery));
     
     /* slider */
     var $status = $('.pagingInfo');
@@ -118,10 +82,46 @@ $(document).ready(function () {
 		},500);
 		return false;
 	});
-        
-    /* scrollbar */
-    $(".mCustomScrollbar").mCustomScrollbal();  
-        
+    
+    /* aside */
+    (function (global, $) {
+
+        var $menu     = $('#aside ul li'),
+            $contents = $('.cont'),
+            $doc      = $('html, body');
+        $(function () {
+
+            $menu.on('click','a', function(e){
+                var $target = $(this).parent(),
+                    idx     = $target.index(),
+                    section = $contents.eq(idx),
+                    offsetTop = section.offset().top;
+                $doc.stop()
+                        .animate({
+                            scrollTop :offsetTop
+                        }, 500);
+                return false;
+            });
+        });
+
+        $(window).scroll(function(){
+
+            var scltop = $(window).scrollTop();
+
+            $.each($contents, function(idx, item){
+                var $target   = $contents.eq(idx),
+                    i         = $target.index(),
+                    targetTop = $target.offset().top;
+
+                if (targetTop <= scltop) {
+                    $menu.removeClass('on');
+                    $menu.eq(idx).addClass('on');
+                }
+            })
+
+        });
+
+    }(window, window.jQuery));
     
 });
 
