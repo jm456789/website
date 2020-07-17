@@ -56,7 +56,7 @@ input:-webkit-autofill {background-color:transparent !important; -webkit-box-sha
 html{scrollbar-arrow-color:#EBECFC; scrollbar-Track-Color:#EBECFC; scrollbar-base-color:#8B83D4; scrollbar-Face-Color:#8B83D4; scrollbar-3dLight-Color:#8B83D4; scrollbar-DarkShadow-Color:#8B83D4; scrollbar-Highlight-Color:#8B83D4; scrollbar-Shadow-Color:#8B83D4;}
 
 /* chrome */
-::-webkit-scrollbar{width:17px;}
+::-webkit-scrollbar{width:7px;}
 ::-webkit-scrollbar-thumb{background-color:#8B83D4; background-clip: padding-box;}
 ::-webkit-scrollbar-track{background-color:#EBECFC;}
 

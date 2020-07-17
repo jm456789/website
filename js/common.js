@@ -40,16 +40,16 @@ $(document).ready(function () {
         var tab_p = $("#s_project .tab .tab_publishing").hasClass("on");
         
         if( tab_d == true ){            
-            $(".project_list ul li").hide();
-            $(".project_list ul .p_design").show();
+            $(".project_list ul li").fadeOut();
+            $(".project_list ul .p_design").fadeIn();
             
         }else if( tab_p == true){            
-            $(".project_list ul li").hide();
-            $(".project_list ul .p_publishing").show();
+            $(".project_list ul li").fadeOut();
+            $(".project_list ul .p_publishing").fadeIn();
             
         }else{
-            $(".project_list ul .p_design").show();
-            $(".project_list ul .p_publishing").show();
+            $(".project_list ul li").fadeOut();
+            $(".project_list ul li").fadeIn();
         }
         
     });
@@ -64,9 +64,9 @@ $(document).ready(function () {
 		$("."+ pop_name +"").show();
 		$(".layer_wrap").attr("tabindex", "0").focus().css('outline','0');
 		el.attr('data-focus','on');
-		var pop_height = $("."+ pop_name +" .layer_wrap").outerHeight();
+		/*var pop_height = $("."+ pop_name +" .layer_wrap").outerHeight();
 		var pop_width = $("."+ pop_name +" .layer_wrap").outerWidth();
-		$("."+ pop_name +" .layer_wrap").css('margin-top','-'+ pop_height/2 +'px').css('margin-left','-'+pop_width/2+'px');
+		$("."+ pop_name +" .layer_wrap").css('margin-top','-'+ pop_height/2 +'px').css('margin-left','-'+pop_width/2+'px');*/
 		return false;
 	});
 	
