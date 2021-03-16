@@ -73,7 +73,7 @@ $(document).ready(function () {
 	$(".layer_popup .btn_pop_close").click(function(){
 		$('html, body').css({'overflow': 'auto', 'height': 'auto'});
 		$(".layer_overlay").hide();
-		$(".layer_popup").hide();
+		$(".layer_popup").hide();        
 		$("a[data-focus~=on]").focus();
 		$("button[data-focus~=on]").focus();
 		window.setTimeout(function(){
